@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #ffffff;
+    --primary-inline-padding: 20px;
+    --primary-dark-color: #000000;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: var(--primary-dark-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--primary-dark-color);
+    font-size: 1rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*utility class*/
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.conatiner {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: var(--primary-inline-padding);
+}
+.drak-btn{
+    background-color: #23272a;
+    color: #ffffff;
+    padding: 17px 29px;
+    border-radius: 30px;
+    font-weight: 300;
+}
+.light-btn{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-weight: 300;
+    border: none;
+}
+.light-btn:hover{
+    box-shadow: 0 0 5px #3c3c3ca5;
+    color: #00b0f4;
+}
+.drak-btn:hover{
+    box-shadow: 0 0 5px #3c3c3ca5;
+    background-color: #232323;
+}
+.hover-links {
+    text-decoration: none;
+}
+
+.hover-links:hover {
+    text-decoration: underline;
+    transition: .5s ease-in-out;
+}
+
+
+
+/*navbar section*/
+
+.head-section {
+    background-color: #404ced;
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 25px;
+   
+}
+.btn-font{
+    font-size: .8rem;
+}
+
+.links ul {
+    gap: 40px;
+    font-size: .9rem;
+}
+
+.links a {
+    color: var(--primary-text-color);
+    font-size: .9rem;
+}
+
+
+/*hero section*/
+
+.hero-section{
+    background-color: #404ced;
+}
+
+.main-hero {
+    padding-block: 100px; 
+    flex-direction: column;
+    gap: 50px;
+}
+.main-hero h1{
+    color: var(--primary-text-color);
+    font-weight: bolder;
+    font-size: 3.5rem;
+    
+}
+.main-hero p{
+    width: 50vw;
+    text-align: center;
+    font-weight:500;
+    color: var(--primary-text-color);
+}
+
+/*svg section*/
+.svg-bg{
+    
+    background: url(../assets/asset\ 1.svg), url(../assets/asset\ 2.svg), url(../assets/asset\ 0.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: -270px bottom, right -230px bottom, center top -50px;
+
+}
+
+
+
+
+
+
+
+
+.cta-btn{
+    gap: 30px;
+    align-items: center;
+}
+.cta-btn i{
+    padding: 5px;
+}
+.feature-card{
+    justify-content: space-between;
+    padding: 120px var(--primary-inline-padding) 80px;
+}
+.right-content{
+    flex-direction: column;
+    max-width: 300px;
+    gap: 20px;
+}
+.right-content h2{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+.center-feature{
+    background-color: rgb(238, 238, 238);
+}
+.cta-section{
+    background-color: rgb(238, 238, 238);
+}
+.cta-main-section{
+    flex-direction: column;
+    gap: 30px;
+    padding: 120px var(--primary-inline-padding) 80px; 
+} 
+.upper-heading{
+    flex-direction: column;
+    gap: 30px;
+}
+.upper-heading h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.upper-heading p{
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+.center-img img{
+    width: 950px;
+}
+    
+.lower-content{
+    flex-direction: column;
+    gap: 40px;
+    padding-block: 80px;
+    background: url('../assets/asset\ 7.svg');
+    background-repeat: no-repeat;
+    background-position: top 15% left 50%;
+    background-size: 600px;
+    overflow: hidden;
+    width: 100%;
+}
+.lower-content h4{
+    font-size: 2rem;
+}
+.blue-btn{
+    background-color: #5865f2;
+    color: #ffffff;
+    padding: 15px 31px;
+    border-radius: 30px;
+    font-weight: 300;
+    border: none;
+    width: 30%;
+}
+footer{
+    padding: 80px var(--primary-inline-padding) 80px;
+    background-color: #23272a;
+}
+.footer-section{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.right{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 20%
+}
+.right h2{
+    color: #5865f2;
+    font-size: 2rem;
+}
+.country{
+    gap: 9px;
+    color: white;
+}
+.country img{
+    width: 30px;
+}
+.country h5{
+    font-weight: 100;
+    font-size: .9rem;
+}
+.social-logo{
+    padding-top: 20px;
+    gap: 20px;
+}
+.social-logo i{
+    color: white;
+}
+.left{
+    color: #5865f2;
+    
+}
+.left-inside-content h4{
+     font-weight: 500;
+     font-size: .8rem;
+}
+.left-inside-content a{
+    color: white;
+    font-size: .8rem;
+    font-weight: 100;
+}
+.left-inside-content{
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
